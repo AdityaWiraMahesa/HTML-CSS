@@ -1,0 +1,133 @@
+.body {
+    background-color: rgb(228, 15, 139);
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+.header {
+    background-color: #aed6f1;
+    height: 125px;
+    width: 100%;
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+    width: 15%;
+}
+
+.header .logo img {
+    margin: 5px 15px 5px 15px;
+    width: 100px;
+    padding: 5px;
+}
+
+.header .welcome {
+    float: left;
+}
+
+.header .welcome h1 {
+    padding-top: 23px;
+    margin: 0;
+}
+
+.header .welcome h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.header .nav {
+    width: 85%;
+    float: left;
+}
+
+.header .nav h1 {
+    margin: 0;
+    padding-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.header .nav h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.header .nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.header .nav ul li {
+    float: left;
+    margin-left: 15px;
+    display: block;
+}
+
+.header .nav ul li a {
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.header .nav ul li a :hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.wrapper {
+    background-color: #dcdcdc;
+    float: left;
+    width: 100%;
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+}
+
+.sidebar h3 {
+    margin: 0;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding-left: 5px;
+}
+
+.sidebar ul li {
+    display: block;
+    padding-top: 12px;
+    font-size: 17px;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar ul li a :hover {
+    color:blue;
+    text-decoration: underline;
+}
+
+.content {
+    background-color: #eeeeee;
+    width: 75%;
+    float: right;
+}
+
+.content section {
+    margin-left: 10px;
+}
+
+.content section h3 {
+    margin: 10px;
+}
+
+.footer {
+    background-color: rgb(2, 2, 39);
+    clear: both;
+    text-align: center;
+    padding: 10px;
+}
