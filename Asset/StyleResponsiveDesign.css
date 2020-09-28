@@ -1,0 +1,602 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+.navigation {
+    width: 100%;
+    height: 60px;
+}
+
+.navigation nav {
+    background: #333;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+.torism {
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+    padding: 0 75px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    font-family: sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+} 
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.active,a:hover{
+    background: #111;
+    transition: .05s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 270px;
+    background-image: url(../Asset/Image/2020-02-23\ 07.55.19\ 1.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.namesite {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.namesite h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+.namesite h3 {
+    color: white;
+    font-family: Times New Roman;
+    font-style: italic;
+}
+
+.content {
+    width: auto;
+    height: auto;
+}
+
+.about {
+    text-align: center;
+    padding: 70px 50px 0 50px;
+    padding-bottom: 50px;    
+}
+
+.about p {
+    padding: 20px 0 30px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about button {
+    color: #111;
+    font-size: 13px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #111;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.about button:hover {
+    background-color: #111;
+    color: white;
+}
+
+.destination {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foto {
+    align-items: center;
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.picture {
+ margin: 10px 15px 20px 15px;
+}
+
+.picture a:hover{
+    background: none;
+}
+
+.picture img:hover {
+    border: 1px solid #111;
+}
+
+
+.picture img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.desc {
+    margin-bottom: 20px;
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #111;
+    font-family: sans-serif;
+}
+
+.desc:hover {
+    background: none;
+    font-weight: bold;
+}
+
+.destination h1 {
+    padding-top: 70px;
+}
+
+.destination button {
+    margin: auto;
+    display: block;
+    color: #111;
+    font-size: 13px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #111;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.destination button:hover {
+    background-color: #111;
+    color: white;
+}
+
+.review {
+    background-color: rgb(240, 238, 238);
+    padding: 50px 140px 50px 140px;
+    font-family: sans-serif;
+}
+
+.review h1 {
+    font-family: serif;
+    padding-top: 50px;
+}
+
+.review form {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+    text-align: center;
+}
+
+.isirev {
+    margin-top: 30px;
+    height: 200px;
+    display: inline-flex;
+}
+
+.komentar {
+    width: 200px;
+    height: 200px;
+    background-color: #f8f9fa;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 20px 0 20px;
+    padding: 5px;
+}
+
+.komentar i {
+    font-size: 39px;
+    margin-top: 25px;
+}
+
+.komentar h3 {
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.komentar p {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.tambahrev {
+    padding: 40px 130px 50px 130px;
+    text-align: start;
+}
+
+.review form ::placeholder {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.review textarea {
+    width: 100%;
+    height: 210px;
+    padding-left: 15px;
+    resize: none;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: 0;
+    background: transparent;
+}
+
+.review input {
+    padding-left: 15px;
+    width: 100%;
+    height: 46px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: 0;
+    background: transparent;
+}
+
+.tambahrev h3 {
+    font-size: 24px;
+    color: #43414F;
+    font-weight: 700;
+}
+
+.review h4 {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #43414F;
+    padding-top: 35px;
+}
+
+.review textarea:focus {
+    border: 1px solid blue;
+}
+
+.review input:focus {
+    border: 1px solid blue;
+}
+
+.review button {
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    background: rgb(44, 81, 241);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.news h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.berita {
+    padding: 20px 30px 50px 30px;
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.news1, .news2, .news3 {
+    width: 45%;
+    margin: 10px 20px 10px 20px;
+}
+
+.isi1, .isi2, .isi3 {
+    height: 200px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+}
+
+.news h3 {
+    font-size: 14px;
+    color: rgb(101, 101, 241);
+    padding-bottom: 10px;
+}
+
+.news a {
+    padding-top: 15px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news p {
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.news a:hover {
+    background: none;
+}
+
+.footer {
+    padding-top: 100px;
+    background-color: rgb(240, 238, 238);
+}
+
+.thx {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #111;
+    border: none;
+}
+
+.thx h2 {
+    padding-top: 6px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 960px){
+    .navigation {
+        width: 100%;
+        height: 40px;
+    }
+
+    .navigation nav {
+        width: 100%;
+        height: 40px;
+    }
+
+    .torism {
+        font-size: 20px;
+        padding: 0 50px;
+        line-height: 40px;
+    }
+
+    nav ul {
+        margin-right: 50px;
+    }
+
+    nav ul li {
+        line-height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .header {
+        width: auto;
+    }
+
+    .about {
+        padding-top: 50px;
+    }
+
+    .picture img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .destination h1 {
+        padding-top: 50px;
+    }
+
+    .review {
+        padding: 50px 90px 50px 90px;
+    }
+
+    .tambahrev {
+        padding: 40px 90px 80px 90px;
+    }
+
+    .news {
+        display: inline;
+    }
+
+    .news1, .news2, .news3 {
+        width: 100%;
+    }
+
+    .isi1, .isi2, .isi3 {
+        padding: 15px;
+    }
+
+    .news h3 {
+        font-size: 10px;
+    }
+    
+    .news a {
+        font-size: 15px;
+    }
+    
+    .news p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 35px;
+    }
+
+    .navigation nav {
+        width: 100%;
+        height: 35px;
+    }
+
+    .torism {
+        font-size: 16px;
+        padding: 0 10px;
+        line-height: 35px;
+    }
+
+    nav ul {
+        margin-right: 50px;
+        display: flex;
+        margin: 0;
+        margin-right: 5px;
+        display: none;
+    }
+
+    nav ul li {
+        line-height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .header {
+        width: auto;
+    }
+
+    .namesite {
+        padding-top: 100px;
+    }
+
+    .namesite h1 {
+        font-size: 50px;
+    }
+
+    .namesite h3 {
+        color: white;
+        font-family: Times New Roman;
+        font-style: italic;
+    }
+
+    .about {
+        padding-top: 50px;
+    }
+
+    .foto {
+        display: block;
+    }
+
+    .destination h1 {
+        padding-top: 50px;
+    }
+
+
+    .review {
+        padding: 50px 30px 50px 30px;
+    }
+
+    .isirev {
+        display: block;
+        padding: 0 10px 0 13px ;
+    }
+    
+    .komentar {
+        width: 270px;
+        height: 60px;
+        margin: 11px 0 11px 0;
+        text-align: start;
+    }
+
+    .komentar h3, p {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .komentar h3 {
+        padding-top: 2px;
+        font-size: 14px;
+    }
+
+    .komentar p {
+        margin-top: 8px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .komentar i {
+        width: 25px;
+        float: left;
+        font-size: 25px;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .tambahrev {
+        padding: 40px 40px 80px 40px;
+    }
+
+    .tambahrev h3 {
+        font-size: 20px;
+    }
+
+    .berita {
+        display: block;
+    }
+
+    .news1, .news2, .news3 {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }    
+    .news h3 {
+        font-size: 10px;
+    }
+
+    .news a {
+        font-size: 15px;
+    }
+
+    .news p {
+        font-size: 13px;
+}
