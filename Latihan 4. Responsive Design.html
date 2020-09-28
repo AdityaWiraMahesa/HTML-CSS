@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latihan 4. Responsive Design</title>
+        <link rel="stylesheet" href="Asset/StyleResponsiveDesign.css">
+        <meta name="description" content="Wisata Bali">
+        <meta name="keywords" content="Wisata Bali">
+        <meta name="author" content="Visit Bali">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script type="text/javascript" src="Asset/jquery.js"></script>
+        <script>
+            $(document).ready(function() {
+  
+                $("#btnform").click(function() {
+                var nilai = $("#tambahrev").text();
+                alert(nilai);
+            })
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Navigasi-->
+        <div class="navigation">
+            <nav class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="torism">Bali Travel Site</label>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destination">Destination</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header-->
+        <div class="header" id="header">
+            <div class="namesite">
+                <h1>MAI MELALI</h1>
+                <h3>- Visit Bali Indonesia -</h3>
+            </div> 
+        </div>
+
+        <!--Content-->
+        <div class="content">
+
+            <!--About-->
+            <div class="about" id="about">
+                <h1>About Us</h1>
+                <p>
+                    Mai Melali merupakan sebuah situs yang menyajikan rekomendasi tempat-tempat liburan di Indonesia khususnya Bali
+                    Indonesia. Situs ini diharapkan dapat membantu para wisatawan domestik maupun mancanegara yang ingin mengunjungi Bali 
+                    sehingga lebih mudah mengetahui tempat-tempat wisata di Bali. Pada situs ini juga menampilkan beberapa gambar
+                    dari tempat wisata yang ada di Bali serta terdapat form review yang dapat diisi sehingga membantu membagikan pengalaman
+                    mengenai tempat wisata yang telah dikunjungi. Semoga situs ini bermanfaat dan dapat membantu, Enjoy Your Vacation!
+                </p>
+                <button type="button">Selengkapnya</button>
+            </div>
+
+            <!--Destination-->
+            <div class="destination" id="destination">
+                <h1>Destination</h1>
+                <div class="foto">
+                    <div class="picture">
+                        <a target="_blank" href="asset/Image/Summer (2).jpg">
+                           <img src="asset/Image/Summer (2).jpg" alt="" width="300" height="300">
+                        </a>
+                        <a class="desc" href="#">Bukit Trunyan</a>
+                    </div>
+                    <div class="picture">
+                        <a target="_blank" href="asset/Image/Summer (1).jpg">
+                            <img src="asset/Image/Summer (1).jpg" alt="" width="300" height="300">
+                        </a>
+                        <a class="desc" href="#">Savana Tianyar</a>
+                    </div>
+                    <div class="picture">
+                        <a target="_blank" href="asset/Image/Summer (3).jpg">
+                            <img src="asset/Image/Summer (3).jpg" alt="" width="300" height="300">
+                        </a>
+                        <a class="desc" href="#">Banyumala Twin Waterfall</a>
+                    </div>
+                </div>
+                <button type="button">Selengkapnya</button>
+            </div>
+            
+            <!--Review-->
+            <div class="review" id="review">
+                <form>
+                    <h1>Review</h1>
+                    <div class="isirev">
+                        <div class="komentar">
+                            <i class="fas fa-user-circle"></i>
+                            <h3>Aditya Wira Mahesa</h3>
+                            <p>Saya senang mengunjungi bali</p>
+                        </div>
+                        <div class="komentar"><i class="fas fa-user-circle"></i>
+                            <h3>Adi Pati Dolken</h3>
+                            <p>Saya enjoy liburan di Bali</p>
+                        </div>
+                        <div class="komentar"><i class="fas fa-user-circle"></i>
+                            <h3>Anya Geraldine</h3>
+                            <p>Tempatnya bagus-bagus di Bali</p>
+                        </div>
+                    </div>
+                <div class="tambahrev" id="tambahrev">
+                    <h3>Tinggalkan komentar</h3>
+                <h4>Komentar*</h4>
+                    <textarea name="komentar" id="komentar" placeholder="Ketik komentar Anda"></textarea>
+                <h4>Nama*</h4>
+                    <input type="text" name="nama" id="nama" value="" placeholder="Ketik nama Anda">
+                <h4>Email*</h4>
+                    <input type="text" name="nama" id="email" value="" placeholder="Ketik email Anda">
+                <button id="btnform">Kirim Komentar</button>
+                </div>
+                </form>
+            </div>
+
+            <!--News-->
+            <div class="news">
+                <h1>News Update</h1>
+                <div class="berita">
+                    <div class="news1" id="news">
+                        <div class="isi1">
+                            <h3>TRAVEL</h3>
+                            <a href="#">Sektor Pariwisata Bali Akan Dibuka Kembali Oktober 2020</a>
+                            <p>Sektor pariwisata Bali akan dibuka kembali untuk wisatawan Oktober 2020.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <div class="isi2">
+                            <h3>BALI NUSRA</h3>
+                            <a href="#">Perhelatan Piala Dunia U-20 Jadi Momentum Kebangkitan Pariwisata Bali</a>
+                            <p>Ajang piala dunia U-20 diharapkan mampu membangkitkan pariwisata Bali
+                                yang lesu karena terdampak Covid-19. Bali merupakan satu diantara venue
+                                untuk perhelatan piala dunia U-20.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news3">
+                        <div class="isi3">
+                            <h3>LIPUTAN6</h3>
+                            <a href="#">Jaga Pariwisata Bali, Gubernur Koster: Perkuat adat istiadat dan kearifan
+                                lokal</a>
+                            <p>Gubernur Bali, Wayan Koster mengajak sema masyarakat Bali
+                                memperkuat adat istiadat dan kearifan lokal untuk menjaga pariwisata Bali.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="thx">
+                <h2>Copyright @ 2020 Aditya Wira Mahesa</h2>
+            </div>
+        </div>
+    </body>
+</html>
